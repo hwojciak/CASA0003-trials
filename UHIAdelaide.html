@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Mapbox UHI- Adelaide</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+<script src="https://api.mapbox.com/mapbox-gl-js/v3.9.3/mapbox-gl.js"></script>
+<link href="https://api.mapbox.com/mapbox-gl-js/v3.9.3/mapbox-gl.css" rel="stylesheet" />
+    
+    
+<style>
+	body { margin: 0; padding: 0; }
+	#map { position: absolute; top: 0; bottom: 0; width: 100%; };
+</style>
+</head>
+
+    
+<body>
+<div id="map"></div>
+
+    
+    
+<script>
+	mapboxgl.accessToken = 'pk.eyJ1IjoiaHdvamNpYWsiLCJhIjoiY202bWkzcnlhMGVxODJzc204dm5nNWpiYiJ9.qUyWV7vHdYRPuZG3Pq-ZlA';  //Put your mapbox access token here
+
+        // Load a new map in the 'map' HTML div
+        var map = new mapboxgl.Map({
+            container: 'map', // container id
+            style: 'mapbox://styles/hwojciak/cm6mglkhr00o601qx3n26380b', // Put your mapbox style ID here
+            center: [138.595, -34.85], // starting position [lng, lat]
+            zoom: 11.36 // starting zoom
+        });
+
+</script>
+
+</body>
+</html>
